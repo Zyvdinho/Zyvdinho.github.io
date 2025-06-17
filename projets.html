@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projets - Zyad MOUTAOUAKIL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(110deg, #3048b2 55%, #5a7cff 100%);
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container-projets {
+            max-width: 850px;
+            margin: 42px auto 0 auto;
+            background: #fff;
+            border-radius: 22px;
+            box-shadow: 0 8px 32px #26315933;
+            padding: 36px 28px 32px 28px;
+        }
+        h1 {
+            text-align: center;
+            color: #3048b2;
+            font-size: 2.3em;
+            margin-bottom: 6px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 1.12em;
+            color: #465b8b;
+            margin-bottom: 34px;
+        }
+        .project-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 38px;
+        }
+        .project-card {
+            background: #f0f4ff;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px #26315915;
+            padding: 23px 19px 18px 19px;
+            margin-bottom: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .project-card h2 {
+            color: #365ecf;
+            font-size: 1.22em;
+            margin-bottom: 11px;
+            text-align: center;
+        }
+        .project-card p {
+            font-size: 1em;
+            color: #444;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        .iframe-linkedin {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 3px 22px #26315928;
+            margin: 0 auto;
+            display: block;
+            max-width: 100%;
+        }
+        @media (max-width: 600px) {
+            .container-projets { padding: 15px 2vw; }
+            .iframe-linkedin { width: 100% !important; height: 350px !important; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="parcours.html">Parcours</a>
+        <a href="competences.html">Compétences</a>
+        <a href="projets.html" class="active">Projets</a>
+        <a href="veille.html">Veille</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section class="container-projets">
+            <h1>🛠️ Mes Projets</h1>
+            <div class="subtitle">
+                Voici un aperçu de quelques réalisations et partages professionnels marquants.<br>
+                <span style="font-size:1.09em;">Tu trouveras aussi un post LinkedIn illustrant un de mes projets clés 👇</span>
+            </div>
+            <div class="project-list">
+                <div class="project-card">
+                    <h2>💡 Mise en place d’un Active Directory</h2>
+                    <p>
+                        Création d’une infrastructure Windows pour une PME, gestion des utilisateurs, des droits, et déploiement de GPO.<br>
+                        <em>Outils : Windows Server 2022, GPO, PowerShell, DNS, DHCP, Proxmox</em>
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h2>🔍 Scan Wireshark & Analyse Réseau</h2>
+                    <p>
+                        Analyse du trafic réseau, identification des vulnérabilités et points d’amélioration, via Wireshark & Nmap.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h2>📡 Serveur IPTV 24/7</h2>
+                    <p>
+                        Installation et sécurisation d’un serveur IPTV fonctionnant H24 avec +800 chaînes accessibles.<br>
+                        <em>Outils : VLC, playlist m3u, iptables</em>
+                    </p>
+                </div>
+                <div class="project-card">
+    <h2>🌐 Projet en vedette : Post LinkedIn</h2>
+    <p>
+        Découvre le projet sur LinkedIn :
+    </p>
+    <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7251972100918276097/"
+       target="_blank"
+       style="background:#365ecf;color:#fff;padding:12px 26px;border-radius:8px;font-weight:bold;text-decoration:none;box-shadow:0 3px 12px #26315932;">
+        Voir sur LinkedIn
+    </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Zyad MOUTAOUAKIL | Portfolio BTS SIO SISR
+    </footer>
+</body>
+</html>
